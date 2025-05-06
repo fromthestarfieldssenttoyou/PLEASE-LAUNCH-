@@ -155,3 +155,44 @@ a {
   margin-bottom: 20px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  .menu {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .auth-buttons {
+    width: 100%;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .featured {
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+  }
+  .featured .info {
+    text-align: center;
+  }
+  .thumbnails {
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 20px;
+  }
+  .search-buttons {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .search-btn {
+    width: 100%;
+    justify-content: center;
+  }
+  .widgets .widget-box {
+    padding: 15px;
+  }
+}
