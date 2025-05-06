@@ -14,16 +14,16 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 20px;
+  padding: 20px 30px;
   background-color: #ffd1dc;
 }
 .navbar .logo img {
-  width: 50px;
-  height: 50px;
+  width: 60px;
+  height: 60px;
 }
 .menu {
   display: flex;
-  gap: 20px;
+  gap: 30px;
 }
 .menu li {
   list-style: none;
@@ -31,51 +31,59 @@ a {
 .menu li a {
   color: #6a4c98;
   font-weight: bold;
+  font-size: 1.4rem;
 }
 .auth-buttons {
   display: flex;
-  gap: 10px;
+  gap: 15px;
 }
 .auth-buttons button {
   background-color: #f8c8dc;
   border: none;
-  padding: 8px 15px;
+  padding: 10px 20px;
   border-radius: 25px;
   cursor: pointer;
+  font-size: 1.2rem;
 }
 .auth-buttons button:hover {
   background-color: #ffb3cc;
 }
 .featured {
   display: flex;
-  gap: 30px;
+  flex-wrap: wrap;
+  gap: 40px;
   background-color: #e8d6f1;
-  padding: 40px;
+  padding: 60px 40px;
+  justify-content: center;
 }
 .featured .poster img {
-  width: 300px;
-  border-radius: 10px;
+  width: 320px;
+  border-radius: 12px;
 }
 .featured .info {
   color: #4f2c8f;
+  max-width: 400px;
 }
 .featured .title {
-  font-size: 2rem;
+  font-size: 2.4rem;
 }
 .featured .subtitle {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
+  margin-bottom: 20px;
 }
 .read-more {
   background-color: #a2d8d4;
-  padding: 10px 20px;
+  padding: 12px 25px;
   border-radius: 25px;
   border: none;
+  font-size: 1.2rem;
   cursor: pointer;
 }
 .carousel {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 15px;
+  margin-top: 20px;
 }
 .arrow {
   font-size: 2rem;
@@ -83,11 +91,11 @@ a {
 }
 .dots {
   display: flex;
-  gap: 5px;
+  gap: 8px;
 }
 .dot {
-  width: 10px;
-  height: 10px;
+  width: 12px;
+  height: 12px;
   border-radius: 50%;
   background-color: #4f2c8f;
 }
@@ -95,37 +103,55 @@ a {
   background-color: #a2d8d4;
 }
 .library {
-  padding: 40px 20px;
+  padding: 60px 40px;
   background-color: #fff8f3;
 }
 .thumbnails {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 30px;
 }
 .thumbnail img {
   width: 100%;
-  border-radius: 10px;
+  border-radius: 12px;
   border: 2px solid #f0d1e5;
 }
 .tags {
-  padding: 20px;
+  padding: 40px;
   background-color: #dbe4e8;
 }
 .search-buttons {
   display: flex;
-  gap: 10px;
+  flex-wrap: wrap;
+  gap: 15px;
 }
 .search-btn {
   background-color: #d1e8e2;
   border: none;
-  padding: 8px 15px;
+  padding: 10px 18px;
   border-radius: 25px;
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 10px;
   cursor: pointer;
+  font-size: 1.1rem;
 }
 .search-btn:hover {
   background-color: #b8e4e0;
+}
+.widgets {
+  padding: 40px;
+  background-color: #fef7fb;
+}
+.widgets h2 {
+  color: #6a4c98;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+.widgets .widget-box {
+  background-color: #fff0f5;
+  padding: 20px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
